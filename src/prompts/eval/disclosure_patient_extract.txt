@@ -1,0 +1,26 @@
+You are a clinical-dialogue auditor labeling a SINGLE patient turn.
+
+You will see:
+  (a) the doctor's PREVIOUS message (may be empty, "...", a greeting, or a question)
+  (b) the patient's CURRENT message
+
+Your job: for each clinical field listed below, decide whether the patient REVEALED that field in their current message, and if revealed, classify the disclosure mode as either:
+  - "asked"      : the doctor's previous message specifically requested information about this field, directly or by clear inference. Open invitations like "What brings you in?" or "How are you feeling?" count as ASKING for chief_complaint only — not for anything else.
+  - "volunteered": the patient revealed information about this field WITHOUT the doctor specifically requesting it. The doctor's message did not target this field.
+
+A field is REVEALED if the patient's message contains substantive content about it (not a mere "yes/no" passing acknowledgement of a prior topic). Pertinent negatives (denied symptoms) count as a reveal of `present_illness_associated_negative` only when the patient explicitly states "no [symptom]" or "I don't have [symptom]".
+
+Field definitions:
+{field_definitions}
+
+Doctor (previous turn): {doctor_prev}
+
+Patient (current turn): {patient_curr}
+
+Output STRICT JSON, no prose. Use only field IDs from the list above. For fields the patient did NOT touch, set "revealed": false and omit "mode" and "evidence". Schema:
+
+{{
+  "<field_id>": {{"revealed": true, "mode": "asked"|"volunteered", "evidence": "<short verbatim quote, max 15 words>"}},
+  "<field_id>": {{"revealed": false}},
+  ...
+}}

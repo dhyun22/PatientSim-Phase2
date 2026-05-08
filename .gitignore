@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+data
+google_credentials.json
+.env
+
+# Phase 2 — keep the synthetic surrogate so the grid is reproducible
+!src/data/
+!src/data/cefr_word_dict.json
+!src/data/final_data/
+!src/data/final_data/patient_profile_phase2.json
+
+# Phase 2 results: keep dialogue.jsonl, disclosure_eval_*.json, and summary files;
+# exclude hydra noise (run_simulation.log, .hydra/) so the repo stays slim.
+src/results/**/run_simulation.log
+src/results/**/.hydra/

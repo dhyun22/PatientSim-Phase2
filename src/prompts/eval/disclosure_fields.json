@@ -1,0 +1,40 @@
+{
+  "fields": [
+    {"id": "chief_complaint",                   "definition": "the headline reason for the ED visit (e.g., 'cough and trouble breathing')"},
+    {"id": "present_illness_onset",             "definition": "when the symptoms began (time, days/hours)"},
+    {"id": "present_illness_location",          "definition": "anatomical location of the symptom (e.g., 'right side of chest')"},
+    {"id": "present_illness_character",         "definition": "the character/quality of the symptom (e.g., productive cough, sharp pain, burning)"},
+    {"id": "present_illness_severity",          "definition": "qualitative severity of the symptom (mild/moderate/severe), excluding numeric pain rating"},
+    {"id": "present_illness_timing",            "definition": "constant vs intermittent, frequency, duration of episodes"},
+    {"id": "present_illness_radiation",         "definition": "whether the symptom spreads to other areas"},
+    {"id": "present_illness_alleviating",       "definition": "anything that makes the symptom better"},
+    {"id": "present_illness_aggravating",       "definition": "anything that makes the symptom worse"},
+    {"id": "present_illness_associated_positive","definition": "additional positive symptoms beyond the chief complaint (e.g., fever, chills, nausea)"},
+    {"id": "present_illness_associated_negative","definition": "symptoms the patient explicitly DENIES having (pertinent negatives)"},
+    {"id": "pain_level_numeric",                "definition": "a numeric pain rating on a 0-10 scale"},
+    {"id": "medication",                        "definition": "any current or recent medication, prescription or OTC"},
+    {"id": "allergies",                         "definition": "drug, food, or environmental allergies"},
+    {"id": "medical_history",                   "definition": "prior diagnoses, chronic conditions, surgeries, hospitalizations, medical devices"},
+    {"id": "family_history",                    "definition": "family history of disease"},
+    {"id": "social_tobacco",                    "definition": "tobacco / smoking status"},
+    {"id": "social_alcohol",                    "definition": "alcohol use"},
+    {"id": "social_drug",                       "definition": "illicit / recreational drug use"},
+    {"id": "social_occupation",                 "definition": "occupation, work situation, or living situation"}
+  ],
+  "sample_letters": [
+    {"letter": "S", "topic": "Signs and Symptoms"},
+    {"letter": "A", "topic": "Allergies"},
+    {"letter": "M", "topic": "Medications"},
+    {"letter": "P", "topic": "Past medical / surgical history"},
+    {"letter": "L", "topic": "Last oral intake"},
+    {"letter": "E", "topic": "Events leading to presentation"}
+  ],
+  "opqrst_letters": [
+    {"letter": "O", "topic": "Onset"},
+    {"letter": "P", "topic": "Provocation / Palliation"},
+    {"letter": "Q", "topic": "Quality"},
+    {"letter": "R", "topic": "Radiation"},
+    {"letter": "S", "topic": "Severity (numeric)"},
+    {"letter": "T", "topic": "Time / duration"}
+  ]
+}

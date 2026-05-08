@@ -1,0 +1,29 @@
+You are a clinical-dialogue auditor classifying a SINGLE doctor turn.
+
+You will see the doctor's CURRENT turn. Decide:
+  (1) Which clinical field(s) does this turn REQUEST information about? (multi-label allowed)
+  (2) Which SAMPLE letter(s) does this turn cover? (S/A/M/P/L/E)
+  (3) Which OPQRST letter(s) does this turn cover? (O/P/Q/R/S/T)
+  (4) Is this turn an OPEN INVITATION (a non-specific opener like "What brings you in?", "How can I help?", "Tell me more.")?
+
+If the doctor turn is empty, "...", a thank-you, an acknowledgement, or a non-question, then `fields_requested`, `sample_letters`, and `opqrst_letters` MUST all be empty arrays. The final-turn `[DDX] (...)` line is NOT a question — return empty arrays.
+
+Field definitions:
+{field_definitions}
+
+SAMPLE letters:
+{sample_letters}
+
+OPQRST letters:
+{opqrst_letters}
+
+Doctor turn: {doctor_curr}
+
+Output STRICT JSON, no prose:
+
+{{
+  "fields_requested": [<field_id>, ...],
+  "sample_letters":   [<"S"|"A"|"M"|"P"|"L"|"E">, ...],
+  "opqrst_letters":   [<"O"|"P"|"Q"|"R"|"S"|"T">, ...],
+  "is_open_invitation": true|false
+}}

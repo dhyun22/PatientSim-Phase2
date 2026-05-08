@@ -1,0 +1,161 @@
+{
+  "by_strategy_main": [
+    {
+      "doctor_strategy": "freestyle",
+      "n_cells": 3,
+      "sdr": 0.333,
+      "qtdr": 0.855,
+      "total_30pt": 7.333,
+      "sample_coverage": 0.556,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "doctor_strategy": "passive_dots",
+      "n_cells": 3,
+      "sdr": 1.0,
+      "qtdr": 0.0,
+      "total_30pt": 7.667,
+      "sample_coverage": 0.0,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "doctor_strategy": "sample",
+      "n_cells": 3,
+      "sdr": 0.556,
+      "qtdr": 0.917,
+      "total_30pt": 5.667,
+      "sample_coverage": 0.389,
+      "opqrst_coverage": 0.111
+    }
+  ],
+  "by_tier_strategy": [
+    {
+      "tier": "cooperative",
+      "doctor_strategy": "freestyle",
+      "n_cells": 1,
+      "sdr": 0.25,
+      "qtdr": 0.833,
+      "total_30pt": 7.0,
+      "sample_coverage": 0.667,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "tier": "cooperative",
+      "doctor_strategy": "passive_dots",
+      "n_cells": 1,
+      "sdr": 1.0,
+      "qtdr": 0.0,
+      "total_30pt": 7.0,
+      "sample_coverage": 0.0,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "tier": "cooperative",
+      "doctor_strategy": "sample",
+      "n_cells": 1,
+      "sdr": 0.667,
+      "qtdr": 0.75,
+      "total_30pt": 5.0,
+      "sample_coverage": 0.5,
+      "opqrst_coverage": 0.333
+    },
+    {
+      "tier": "severe",
+      "doctor_strategy": "freestyle",
+      "n_cells": 1,
+      "sdr": 0.75,
+      "qtdr": 1.0,
+      "total_30pt": 5.0,
+      "sample_coverage": 0.667,
+      "opqrst_coverage": 0.167
+    },
+    {
+      "tier": "severe",
+      "doctor_strategy": "passive_dots",
+      "n_cells": 1,
+      "sdr": 1.0,
+      "qtdr": 0.0,
+      "total_30pt": 2.0,
+      "sample_coverage": 0.0,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "tier": "severe",
+      "doctor_strategy": "sample",
+      "n_cells": 1,
+      "sdr": 0.667,
+      "qtdr": 0.667,
+      "total_30pt": 2.0,
+      "sample_coverage": 0.333,
+      "opqrst_coverage": 0.167
+    },
+    {
+      "tier": "typical",
+      "doctor_strategy": "freestyle",
+      "n_cells": 1,
+      "sdr": 0.5,
+      "qtdr": 1.0,
+      "total_30pt": 7.0,
+      "sample_coverage": 0.667,
+      "opqrst_coverage": 0.333
+    },
+    {
+      "tier": "typical",
+      "doctor_strategy": "passive_dots",
+      "n_cells": 1,
+      "sdr": 1.0,
+      "qtdr": 0.0,
+      "total_30pt": 7.0,
+      "sample_coverage": 0.0,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "tier": "typical",
+      "doctor_strategy": "sample",
+      "n_cells": 1,
+      "sdr": 0.333,
+      "qtdr": 1.0,
+      "total_30pt": 4.0,
+      "sample_coverage": 0.333,
+      "opqrst_coverage": 0.333
+    }
+  ],
+  "by_passive_cue": [
+    {
+      "doctor_strategy": "passive_dots",
+      "n_cells": 1,
+      "sdr": 1.0,
+      "qtdr": 0.0,
+      "total_30pt": 7.0,
+      "sample_coverage": 0.0,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "doctor_strategy": "passive_hmm",
+      "n_cells": 1,
+      "sdr": 1.0,
+      "qtdr": 0.0,
+      "total_30pt": 6.0,
+      "sample_coverage": 0.0,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "doctor_strategy": "passive_isee",
+      "n_cells": 1,
+      "sdr": 1.0,
+      "qtdr": 0.0,
+      "total_30pt": 8.0,
+      "sample_coverage": 0.0,
+      "opqrst_coverage": 0.0
+    },
+    {
+      "doctor_strategy": "passive_oh",
+      "n_cells": 1,
+      "sdr": 1.0,
+      "qtdr": 0.0,
+      "total_30pt": 8.0,
+      "sample_coverage": 0.0,
+      "opqrst_coverage": 0.0
+    }
+  ]
+}
