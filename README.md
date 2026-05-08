@@ -159,16 +159,6 @@ The flag (passive SDR = 1.00) is uniformly on across every tier; the volume (Tot
 | CUE ablation table (4 passive cues × pneumonia) | `python src/scripts/run_phase2_grid.py --arm abl && bash src/scripts/run_phase2_eval.sh && (cd src && python eval/aggregate_phase2.py)` | `src/results/phase2_summary_abl.md` |
 | Per-cell raw rows (verify any single number) | (same as above; see CSV) | `src/results/phase2_summary.csv` |
 
-## ML4H 2026 Phase 2 Submission Checklist
-
-- [x] Repository created as **private**
-- [ ] TA accounts invited as collaborators (`mp2893`, `dustn1259`, `dek924`, `Tonge-Shim`) — done after push, on GitHub Settings → Collaborators
-- [x] `requirements.txt` provides a single-command install (CPU-only; no GPU/CUDA)
-- [x] `.env.example` exists; no actual API keys committed
-- [x] Estimated API cost / call count documented (see *Expected Runtime / Resources*)
-- [x] README includes **Project Overview**, **Folder Structure**, **Installation**, **Usage**, **Expected Runtime/Resources**, **Expected Output Format**, and **Proposal–Code Mapping**
-- [ ] Submission commit hash recorded on the submission form (HEAD SHA of `main` after push)
-
 ## Acknowledgements
 
 The patient agent, persona schema, and base simulation harness are from the original [PatientSim](https://github.com/dek924/PatientSim) (Kyung et al., NeurIPS 2025 D&B Track Spotlight). Phase 2 measures the unmodified PatientSim patient; we add only the disclosure-quality evaluator, the doctor-strategy prompts, the synthetic surrogate patients, and the grid runner.
