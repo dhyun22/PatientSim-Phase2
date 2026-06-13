@@ -1,0 +1,353 @@
+[
+    {
+        "hadm_id": 20000136,
+        "patient_id": "chest_pain_001",
+        "doctor_strategy": "freestyle",
+        "personality_type": "plain",
+        "cefr_type": "C",
+        "recall_level_type": "high",
+        "dazed_level_type": "normal",
+        "diagnosis": "Acute coronary syndrome",
+        "metrics": {
+            "n_patient_turns": 4,
+            "sdr": 0.25,
+            "qtdr": 1.0,
+            "pair_total": 5,
+            "pair_responded": 5,
+            "pos_score": 4,
+            "neg_score": 0,
+            "pain_score": 0,
+            "med_score": 3,
+            "total_30pt": 7,
+            "sample_coverage": 0.5,
+            "opqrst_coverage": 0.16666666666666666,
+            "sample_letters_covered": [
+                "M",
+                "P",
+                "S"
+            ],
+            "opqrst_letters_covered": [
+                "R"
+            ]
+        },
+        "patient_labels": [
+            {
+                "chief_complaint": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "experiencing significant substernal chest pressure"
+                },
+                "present_illness_onset": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "began about an hour ago"
+                },
+                "present_illness_location": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "substernal"
+                },
+                "present_illness_character": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "chest pressure"
+                },
+                "present_illness_severity": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "significant"
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "radiating to my left arm and my jaw"
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I take atorvastatin 40mg nightly, aspirin 81mg daily, and a multivitamin."
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have hyperlipidemia, prediabetes, and occasional heartburn."
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "My father had a myocardial infarction at age 60, and my mother has hypertension."
+                },
+                "social_tobacco": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I am a current smoker, consuming half a pack per day for 30 years."
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            }
+        ],
+        "doctor_labels": [
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": true
+            },
+            {
+                "fields_requested": [
+                    "present_illness_radiation"
+                ],
+                "sample_letters": [
+                    "S"
+                ],
+                "opqrst_letters": [
+                    "R"
+                ],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "medical_history",
+                    "medication"
+                ],
+                "sample_letters": [
+                    "M",
+                    "P"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "social_tobacco",
+                    "family_history"
+                ],
+                "sample_letters": [
+                    "P"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,279 @@
+[
+    {
+        "hadm_id": 20000134,
+        "patient_id": "pneumonia_001",
+        "doctor_strategy": "sample",
+        "personality_type": "plain",
+        "cefr_type": "C",
+        "recall_level_type": "high",
+        "dazed_level_type": "normal",
+        "diagnosis": "Pneumonia",
+        "metrics": {
+            "n_patient_turns": 3,
+            "sdr": 0.6666666666666666,
+            "qtdr": 0.75,
+            "pair_total": 4,
+            "pair_responded": 3,
+            "pos_score": 5,
+            "neg_score": 0,
+            "pain_score": 0,
+            "med_score": 0,
+            "total_30pt": 5,
+            "sample_coverage": 0.3333333333333333,
+            "opqrst_coverage": 0.3333333333333333,
+            "sample_letters_covered": [
+                "A",
+                "S"
+            ],
+            "opqrst_letters_covered": [
+                "O",
+                "Q"
+            ]
+        },
+        "patient_labels": [
+            {
+                "chief_complaint": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "persistent cough and significant respiratory distress"
+                },
+                "present_illness_onset": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "for the past four days"
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "persistent cough"
+                },
+                "present_illness_severity": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "significant respiratory distress"
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "right-sided pleuritic chest pain"
+                },
+                "present_illness_character": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "productive of yellow-green sputum"
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "shortness of breath on exertion"
+                },
+                "present_illness_associated_positive": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "fevers up to 38.7C, shortness of breath on exertion, and right-sided pleuritic chest pain"
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have an allergy to penicillin, which causes a rash."
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            }
+        ],
+        "doctor_labels": [
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": true
+            },
+            {
+                "fields_requested": [
+                    "present_illness_character",
+                    "present_illness_associated_positive",
+                    "present_illness_onset"
+                ],
+                "sample_letters": [
+                    "S"
+                ],
+                "opqrst_letters": [
+                    "Q",
+                    "O"
+                ],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "allergies"
+                ],
+                "sample_letters": [
+                    "A"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            }
+        ]
+    }
+]

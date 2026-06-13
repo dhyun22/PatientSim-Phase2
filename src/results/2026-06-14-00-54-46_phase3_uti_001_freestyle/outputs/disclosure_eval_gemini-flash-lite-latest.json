@@ -1,0 +1,365 @@
+[
+    {
+        "hadm_id": 20000135,
+        "patient_id": "uti_001",
+        "doctor_strategy": "freestyle",
+        "personality_type": "plain",
+        "cefr_type": "C",
+        "recall_level_type": "high",
+        "dazed_level_type": "normal",
+        "diagnosis": "Urinary tract infection",
+        "metrics": {
+            "n_patient_turns": 4,
+            "sdr": 0.5,
+            "qtdr": 1.0,
+            "pair_total": 7,
+            "pair_responded": 7,
+            "pos_score": 5,
+            "neg_score": 1,
+            "pain_score": 0,
+            "med_score": 3,
+            "total_30pt": 9,
+            "sample_coverage": 0.6666666666666666,
+            "opqrst_coverage": 0.16666666666666666,
+            "sample_letters_covered": [
+                "A",
+                "M",
+                "P",
+                "S"
+            ],
+            "opqrst_letters_covered": [
+                "Q"
+            ]
+        },
+        "patient_labels": [
+            {
+                "chief_complaint": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "burning sensation when I urinate"
+                },
+                "present_illness_onset": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "for the past two days"
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "burning sensation"
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "suprapubic discomfort"
+                },
+                "present_illness_character": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "burning with urination, cloudy urine"
+                },
+                "present_illness_severity": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "mild back ache"
+                },
+                "present_illness_timing": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "urinary frequency, and urgency"
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "low-grade fever of 38.1°C"
+                },
+                "present_illness_associated_negative": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "no flank pain, nausea, vomiting, or vaginal discharge"
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I take levothyroxine 75 mcg daily, a multivitamin, and ibuprofen as needed."
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have hypothyroidism and a history of recurrent urinary tract infections."
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have a known allergy to sulfa drugs, which causes hives."
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I am a non-smoker"
+                },
+                "social_alcohol": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "only consume alcohol occasionally, about one or two drinks per month."
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            }
+        ],
+        "doctor_labels": [
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": true
+            },
+            {
+                "fields_requested": [
+                    "present_illness_character",
+                    "present_illness_associated_positive"
+                ],
+                "sample_letters": [
+                    "S"
+                ],
+                "opqrst_letters": [
+                    "Q"
+                ],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "medical_history",
+                    "medication"
+                ],
+                "sample_letters": [
+                    "M",
+                    "P"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "allergies",
+                    "social_tobacco",
+                    "social_alcohol"
+                ],
+                "sample_letters": [
+                    "A",
+                    "M"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            }
+        ]
+    }
+]

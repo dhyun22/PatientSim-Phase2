@@ -1,0 +1,360 @@
+[
+    {
+        "hadm_id": 20000134,
+        "patient_id": "pneumonia_001",
+        "doctor_strategy": "freestyle",
+        "personality_type": "plain",
+        "cefr_type": "C",
+        "recall_level_type": "high",
+        "dazed_level_type": "normal",
+        "diagnosis": "Pneumonia",
+        "metrics": {
+            "n_patient_turns": 4,
+            "sdr": 0.5,
+            "qtdr": 1.0,
+            "pair_total": 6,
+            "pair_responded": 6,
+            "pos_score": 5,
+            "neg_score": 0,
+            "pain_score": 0,
+            "med_score": 2,
+            "total_30pt": 7,
+            "sample_coverage": 0.6666666666666666,
+            "opqrst_coverage": 0.16666666666666666,
+            "sample_letters_covered": [
+                "A",
+                "M",
+                "P",
+                "S"
+            ],
+            "opqrst_letters_covered": [
+                "Q"
+            ]
+        },
+        "patient_labels": [
+            {
+                "chief_complaint": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "persistent cough and significant respiratory distress"
+                },
+                "present_illness_onset": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "for the past four days"
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "persistent cough"
+                },
+                "present_illness_severity": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "significant respiratory distress"
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "right-sided pleuritic chest pain"
+                },
+                "present_illness_character": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "cough is productive with yellow-green sputum"
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "shortness of breath on exertion"
+                },
+                "present_illness_associated_positive": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "fevers reaching 38.7C, shortness of breath, chest pain, fatigue, decreased appetite, and chills"
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I take lisinopril, metformin, atorvastatin, and acetaminophen as needed."
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have hypertension, type 2 diabetes, and osteoarthritis."
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have an allergy to penicillin, which causes a rash."
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "my father had coronary artery disease."
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            }
+        ],
+        "doctor_labels": [
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": true
+            },
+            {
+                "fields_requested": [
+                    "present_illness_character",
+                    "present_illness_associated_positive"
+                ],
+                "sample_letters": [
+                    "S"
+                ],
+                "opqrst_letters": [
+                    "Q"
+                ],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "medical_history",
+                    "medication"
+                ],
+                "sample_letters": [
+                    "M",
+                    "P"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "allergies",
+                    "family_history"
+                ],
+                "sample_letters": [
+                    "A",
+                    "P"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            }
+        ]
+    }
+]

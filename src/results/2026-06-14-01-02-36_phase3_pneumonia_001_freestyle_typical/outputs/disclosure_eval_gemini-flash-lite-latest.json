@@ -1,0 +1,357 @@
+[
+    {
+        "hadm_id": 20000134,
+        "patient_id": "pneumonia_001",
+        "doctor_strategy": "freestyle",
+        "personality_type": "plain",
+        "cefr_type": "B",
+        "recall_level_type": "low",
+        "dazed_level_type": "normal",
+        "diagnosis": "Pneumonia",
+        "metrics": {
+            "n_patient_turns": 4,
+            "sdr": 0.5,
+            "qtdr": 1.0,
+            "pair_total": 7,
+            "pair_responded": 7,
+            "pos_score": 3,
+            "neg_score": 0,
+            "pain_score": 1,
+            "med_score": 2,
+            "total_30pt": 6,
+            "sample_coverage": 0.6666666666666666,
+            "opqrst_coverage": 0.3333333333333333,
+            "sample_letters_covered": [
+                "A",
+                "M",
+                "P",
+                "S"
+            ],
+            "opqrst_letters_covered": [
+                "Q",
+                "S"
+            ]
+        },
+        "patient_labels": [
+            {
+                "chief_complaint": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have had a cough and trouble breathing"
+                },
+                "present_illness_onset": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "for 4 days"
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "bringing up yellow-green stuff"
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "breathing trouble is about a 5"
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": true,
+                    "mode": "volunteered",
+                    "evidence": "chest pain on my right side"
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have a fever up to 38.7C and I feel chills. I also have chest pain"
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": false
+                },
+                "allergies": {
+                    "revealed": false
+                },
+                "medical_history": {
+                    "revealed": false
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            },
+            {
+                "chief_complaint": {
+                    "revealed": false
+                },
+                "present_illness_onset": {
+                    "revealed": false
+                },
+                "present_illness_location": {
+                    "revealed": false
+                },
+                "present_illness_character": {
+                    "revealed": false
+                },
+                "present_illness_severity": {
+                    "revealed": false
+                },
+                "present_illness_timing": {
+                    "revealed": false
+                },
+                "present_illness_radiation": {
+                    "revealed": false
+                },
+                "present_illness_alleviating": {
+                    "revealed": false
+                },
+                "present_illness_aggravating": {
+                    "revealed": false
+                },
+                "present_illness_associated_positive": {
+                    "revealed": false
+                },
+                "present_illness_associated_negative": {
+                    "revealed": false
+                },
+                "pain_level_numeric": {
+                    "revealed": false
+                },
+                "medication": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I don't remember all my pills"
+                },
+                "allergies": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I am allergic to penicillin"
+                },
+                "medical_history": {
+                    "revealed": true,
+                    "mode": "asked",
+                    "evidence": "I have high blood pressure and diabetes"
+                },
+                "family_history": {
+                    "revealed": false
+                },
+                "social_tobacco": {
+                    "revealed": false
+                },
+                "social_alcohol": {
+                    "revealed": false
+                },
+                "social_drug": {
+                    "revealed": false
+                },
+                "social_occupation": {
+                    "revealed": false
+                }
+            }
+        ],
+        "doctor_labels": [
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": true
+            },
+            {
+                "fields_requested": [
+                    "present_illness_character",
+                    "pain_level_numeric"
+                ],
+                "sample_letters": [
+                    "S"
+                ],
+                "opqrst_letters": [
+                    "Q",
+                    "S"
+                ],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "present_illness_associated_positive",
+                    "present_illness_location"
+                ],
+                "sample_letters": [
+                    "S"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [
+                    "medical_history",
+                    "medication",
+                    "allergies"
+                ],
+                "sample_letters": [
+                    "A",
+                    "M",
+                    "P"
+                ],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            },
+            {
+                "fields_requested": [],
+                "sample_letters": [],
+                "opqrst_letters": [],
+                "is_open_invitation": false
+            }
+        ]
+    }
+]

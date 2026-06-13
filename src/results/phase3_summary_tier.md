@@ -1,0 +1,11 @@
+| tier | doctor_strategy | n_cells | sdr | qtdr | total_30pt | sample_coverage | opqrst_coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| cooperative | freestyle | 1 | 0.5 | 1.0 | 7.0 | 0.667 | 0.167 |
+| cooperative | passive_dots | 1 | 1.0 | 0.0 | 2.0 | 0.0 | 0.0 |
+| cooperative | sample | 1 | 0.667 | 0.75 | 5.0 | 0.333 | 0.333 |
+| severe | freestyle | 1 | 0.75 | 0.333 | 5.0 | 0.667 | 0.5 |
+| severe | passive_dots | 1 | 1.0 | 0.0 | 4.0 | 0.0 | 0.0 |
+| severe | sample | 1 | 0.667 | 0.5 | 3.0 | 0.333 | 0.667 |
+| typical | freestyle | 1 | 0.5 | 1.0 | 6.0 | 0.667 | 0.333 |
+| typical | passive_dots | 1 | 1.0 | 0.0 | 1.0 | 0.0 | 0.0 |
+| typical | sample | 1 | 0.667 | 1.0 | 3.0 | 0.5 | 0.333 |

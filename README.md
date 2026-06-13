@@ -14,6 +14,29 @@ Phase 1 (RQ1) found that the original PatientSim patient agent exhibits **excess
 
 The patient agent that closes the leak — a bucket-gated **controlled-disclosure** prompt — is the Phase 3 roadmap in the *Next Step* section of the proposal PDF.
 
+## Phase 3 — Controlled-Disclosure Patient Agent
+
+Phase 3 implements that fix and re-runs the **identical** 18-cell matrix, evaluator, and metrics, so every controlled cell is paired to its Phase 2 baseline cell. The change is **prompt-only**: the patient chart is reorganized into topic **buckets** (present illness, pain, medication, allergy, past medical history, family history, social history); every bucket except the chief complaint starts *closed* and opens only when the doctor explicitly asks about that topic; passive cues (`...`, `Hmm`, `I see`, `Oh`) open no bucket and yield a content-free reply; and a turn-level self-check strips volunteering connectors (`and also`, `by the way`). No agent / doctor / persona / evaluator code changed.
+
+```bash
+# 1. Run the 18-cell controlled-disclosure grid
+python src/scripts/run_phase3_grid.py --arm all --skip_existing
+# 2. Evaluate every cell with the SAME disclosure-quality judge + aggregate (writes phase3_summary.* and phase2_vs_phase3*)
+bash src/scripts/run_phase3_eval.sh
+```
+
+**Headline result (MAIN, Cooperative, 3 patients), Phase 2 → Phase 3:**
+
+| Doctor strategy | SDR | QTDR | Total_30pt | SAMPLE |
+|---|---|---|---|---|
+| **passive (`...`)** | 1.00 → 1.00 | 0.00 → 0.00 | **7.67 → 2.67** | 0.00 → 0.00 |
+| freestyle (active) | 0.33 → 0.42 | 0.86 → 1.00 | 7.33 → 7.67 | 0.56 → 0.61 |
+| sample (active) | 0.56 → 0.56 | 0.92 → 0.92 | 5.67 → 5.33 | 0.39 → 0.33 |
+
+The passive doctor's disclosed *volume* (Total_30pt) collapses (−5.0) while active interviewing is fully retained (active QTDR ≈ 0.96), reversing the Phase 2 pathology into the intended `active > passive` ordering. Passive **SDR stays ≈1.0** because the always-allowed chief complaint counts as volunteered — so Total_30pt, not SDR, is the metric that captures this fix.
+
+**New / changed Phase 3 files:** `src/prompts/simulation/initial_system_patient_controlled{,_uti}.txt` (the fix), `src/scripts/run_phase3_grid.py`, `src/scripts/run_phase3_eval.sh`, `src/eval/aggregate_phase3.py`, and the `src/results/*phase3_*` artefacts. The Phase 2 baseline prompt and `src/results/phase2_*` artefacts are left untouched for comparison.
+
 ## Folder Structure
 
 ```

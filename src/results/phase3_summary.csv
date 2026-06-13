@@ -1,0 +1,19 @@
+exp_dir,patient_id,diagnosis,doctor_strategy,personality_type,cefr_type,recall_level_type,dazed_level_type,tier,n_patient_turns,sdr,qtdr,pos_score,neg_score,pain_score,med_score,total_30pt,sample_coverage,opqrst_coverage
+2026-06-14-00-51-22_phase3_pneumonia_001_passive_dots,pneumonia_001,Pneumonia,passive_dots,plain,C,high,normal,cooperative,3,1.0,0.0,2,0,0,0,2,0.0,0.0
+2026-06-14-00-51-55_phase3_pneumonia_001_freestyle,pneumonia_001,Pneumonia,freestyle,plain,C,high,normal,cooperative,4,0.5,1.0,5,0,0,2,7,0.6666666666666666,0.16666666666666666
+2026-06-14-00-52-56_phase3_pneumonia_001_sample,pneumonia_001,Pneumonia,sample,plain,C,high,normal,cooperative,3,0.6666666666666666,0.75,5,0,0,0,5,0.3333333333333333,0.3333333333333333
+2026-06-14-00-53-55_phase3_uti_001_passive_dots,uti_001,Urinary tract infection,passive_dots,plain,C,high,normal,cooperative,3,1.0,0.0,2,0,0,0,2,0.0,0.0
+2026-06-14-00-54-46_phase3_uti_001_freestyle,uti_001,Urinary tract infection,freestyle,plain,C,high,normal,cooperative,4,0.5,1.0,5,1,0,3,9,0.6666666666666666,0.16666666666666666
+2026-06-14-00-56-00_phase3_uti_001_sample,uti_001,Urinary tract infection,sample,plain,C,high,normal,cooperative,3,0.6666666666666666,1.0,4,1,1,0,6,0.3333333333333333,0.16666666666666666
+2026-06-14-00-56-46_phase3_chest_pain_001_passive_dots,chest_pain_001,Acute coronary syndrome,passive_dots,plain,C,high,normal,cooperative,3,1.0,0.0,4,0,0,0,4,0.0,0.0
+2026-06-14-00-57-19_phase3_chest_pain_001_freestyle,chest_pain_001,Acute coronary syndrome,freestyle,plain,C,high,normal,cooperative,4,0.25,1.0,4,0,0,3,7,0.5,0.16666666666666666
+2026-06-14-00-58-28_phase3_chest_pain_001_sample,chest_pain_001,Acute coronary syndrome,sample,plain,C,high,normal,cooperative,3,0.3333333333333333,1.0,4,0,1,0,5,0.3333333333333333,0.3333333333333333
+2026-06-14-00-59-01_phase3_pneumonia_001_passive_dots_severe,pneumonia_001,Pneumonia,passive_dots,plain,A,low,high,severe,4,1.0,0.0,4,0,0,0,4,0.0,0.0
+2026-06-14-00-59-56_phase3_pneumonia_001_freestyle_severe,pneumonia_001,Pneumonia,freestyle,plain,A,low,high,severe,4,0.75,0.3333333333333333,3,0,0,2,5,0.6666666666666666,0.5
+2026-06-14-01-01-09_phase3_pneumonia_001_sample_severe,pneumonia_001,Pneumonia,sample,plain,A,low,high,severe,3,0.6666666666666666,0.5,2,0,1,0,3,0.3333333333333333,0.6666666666666666
+2026-06-14-01-01-49_phase3_pneumonia_001_passive_dots_typical,pneumonia_001,Pneumonia,passive_dots,plain,B,low,normal,typical,3,1.0,0.0,1,0,0,0,1,0.0,0.0
+2026-06-14-01-02-36_phase3_pneumonia_001_freestyle_typical,pneumonia_001,Pneumonia,freestyle,plain,B,low,normal,typical,4,0.5,1.0,3,0,1,2,6,0.6666666666666666,0.3333333333333333
+2026-06-14-01-03-33_phase3_pneumonia_001_sample_typical,pneumonia_001,Pneumonia,sample,plain,B,low,normal,typical,3,0.6666666666666666,1.0,2,0,1,0,3,0.5,0.3333333333333333
+2026-06-14-01-04-18_phase3_pneumonia_001_passive_hmm,pneumonia_001,Pneumonia,passive_hmm,plain,C,high,normal,cooperative,3,0.6666666666666666,0.0,2,0,0,0,2,0.0,0.0
+2026-06-14-01-04-59_phase3_pneumonia_001_passive_isee,pneumonia_001,Pneumonia,passive_isee,plain,C,high,normal,cooperative,3,0.6666666666666666,0.0,2,0,0,0,2,0.0,0.0
+2026-06-14-01-05-51_phase3_pneumonia_001_passive_oh,pneumonia_001,Pneumonia,passive_oh,plain,C,high,normal,cooperative,3,1.0,0.0,2,0,0,0,2,0.0,0.0

@@ -14,3 +14,12 @@ google_credentials.json
 # exclude hydra noise (run_simulation.log, .hydra/) so the repo stays slim.
 src/results/**/run_simulation.log
 src/results/**/.hydra/
+
+# Phase 3 report deliverable + build tooling (kept outside the repo)
+team12.pdf
+*.pdf
+build_report.py
+make_figure.py
+phase3_figure.png
+phase3_tier_figure.png
+run_phase3_all.sh
