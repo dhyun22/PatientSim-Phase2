@@ -1,8 +1,10 @@
-# PatientSim Phase 2 — Disclosure-Quality Metrics (Team 12)
+# PatientSim Phase 3 — Controlling Spontaneous Disclosure (Team 12)
 
-ML4H 2026 Phase 2 submission. **GitHub**: <https://github.com/dhyun22/PatientSim-Phase2>
+ML4H 2026 Phase 3 submission, continuing our Phase 2 disclosure-quality metrics. **GitHub**: <https://github.com/dhyun22/PatientSim-Phase2>
 
-This repository builds on the original PatientSim simulator (Kyung et al., NeurIPS 2025 D&B Track) but contains only the artefacts needed to reproduce our Phase 2 work; it is not a redistribution of the original codebase.
+**Phase 3 (latest):** a bucket-gated *controlled-disclosure* patient agent that closes the spontaneous-disclosure leak measured in Phase 2 — see [Phase 3 — Controlled-Disclosure Patient Agent](#phase-3--controlled-disclosure-patient-agent) below. **Phase 2 (baseline):** the disclosure-quality evaluator and the 18-cell measurement of the unmodified PatientSim agent, documented in the rest of this README and left untouched for comparison.
+
+This repository builds on the original PatientSim simulator (Kyung et al., NeurIPS 2025 D&B Track) but contains only the artefacts needed to reproduce our Phase 2 and Phase 3 work; it is not a redistribution of the original codebase.
 
 ## Project Overview
 
