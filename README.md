@@ -37,40 +37,54 @@ bash src/scripts/run_phase3_eval.sh
 
 The passive doctor's disclosed *volume* (Total_30pt) collapses (−5.0) while active interviewing is fully retained (active QTDR ≈ 0.96), reversing the Phase 2 pathology into the intended `active > passive` ordering. Passive **SDR stays ≈1.0** because the always-allowed chief complaint counts as volunteered — so Total_30pt, not SDR, is the metric that captures this fix.
 
-**New / changed Phase 3 files:** `src/prompts/simulation/initial_system_patient_controlled{,_uti}.txt` (the fix), `src/scripts/run_phase3_grid.py`, `src/scripts/run_phase3_eval.sh`, `src/eval/aggregate_phase3.py`, and the `src/results/*phase3_*` artefacts. The Phase 2 baseline prompt and `src/results/phase2_*` artefacts are left untouched for comparison.
+### Phase 3 code layout
+
+Phase 3 adds **only** the files below; the shared simulation harness (`run_simulation.py`, `models.py`, `agent/`, `eval/disclosure_eval.py`) is reused **unchanged**, which is what makes the comparison clean — the sole difference between a Phase 2 and a Phase 3 cell is the patient prompt selected via Hydra (`data.patient_prompt_file`).
+
+| Phase 3 file (new) | Role | Phase 2 counterpart (baseline, untouched) |
+|---|---|---|
+| `src/prompts/simulation/initial_system_patient_controlled.txt` | **The fix** — bucket-gated controlled-disclosure patient prompt | `initial_system_patient_w_persona.txt` |
+| `src/prompts/simulation/initial_system_patient_controlled_uti.txt` | UTI variant (adds the sexual-history field to the social bucket) | `initial_system_patient_w_persona_uti.txt` |
+| `src/scripts/run_phase3_grid.py` | 18-cell grid driver; injects the controlled prompt and writes `phase3_*` cells | `run_phase2_grid.py` |
+| `src/scripts/run_phase3_eval.sh` | Runs the **same** `disclosure_eval.py` judge on every `phase3_*` cell, then aggregates | `run_phase2_eval.sh` |
+| `src/eval/aggregate_phase3.py` | Aggregates `phase3_*` cells **and** emits the paired Phase 2→Phase 3 comparison (`phase2_vs_phase3*`) | `aggregate_phase2.py` |
+| `src/results/*phase3_*`, `phase3_summary.*`, `phase2_vs_phase3*` | Committed Phase 3 dialogues, judge JSON, and summary tables | `src/results/*phase2_*`, `phase2_summary.*` |
+
+Run `python src/scripts/run_phase3_grid.py` with no flag for a dry single smoke cell, or `--arm main|tier|abl|all` to reproduce any arm. Everything ending in `phase2` is the **baseline** (documented in the *Phase 2 (baseline)* reference below) and is intentionally left in place so each controlled cell can be diffed against its unmodified counterpart.
 
 ## Folder Structure
 
 ```
 .
 ├── README.md                        # this file
-├── requirements.txt                 # CPU-only Phase 2 deps
+├── requirements.txt                 # CPU-only deps (Phase 2 + Phase 3)
 ├── .env.example                     # required environment variables
 └── src/
-    ├── run_simulation.py            # dialogue driver (Hydra entry point)
-    ├── models.py                    # LLM backend wrappers (Gemini / Azure / OpenAI / vLLM)
-    ├── utils.py                     # I/O & seed helpers
-    ├── config/base.yaml             # default config (Gemini, 4 turns, passive_dots)
-    ├── agent/                       # PatientAgent and DoctorAgent
-    ├── data/
-    │   ├── cefr_word_dict.json      # CEFR-graded word list (used for patient persona)
-    │   └── final_data/
-    │       └── patient_profile_phase2.json  # 3 PHI-free synthetic patients
-    ├── prompts/
-    │   ├── simulation/              # patient + 6 doctor strategy prompts + persona JSONs
-    │   └── eval/                    # disclosure_{patient_extract,doctor_question_tag}.txt + fields schema
+    ├── run_simulation.py            # [shared] dialogue driver (Hydra entry point)
+    ├── models.py                    # [shared] LLM backend wrappers (Gemini / Azure / OpenAI / vLLM)
+    ├── utils.py                     # [shared] I/O & seed helpers
+    ├── config/base.yaml             # [shared] default config (Gemini, 4 turns, passive_dots)
+    ├── agent/                       # [shared] PatientAgent and DoctorAgent (unchanged)
+    ├── data/final_data/
+    │   └── patient_profile_phase2.json  # [shared] 3 PHI-free synthetic patients
+    ├── prompts/simulation/
+    │   ├── initial_system_patient_w_persona*.txt    # [P2 baseline] unmodified PatientSim patient
+    │   └── initial_system_patient_controlled*.txt   # [P3 fix] bucket-gated controlled disclosure
     ├── eval/
-    │   ├── disclosure_eval.py       # two-pass LLM-judge → per-dialogue metrics
-    │   └── aggregate_phase2.py      # arm-wise pivot tables (MAIN / TIER / CUE)
+    │   ├── disclosure_eval.py       # [shared] two-pass LLM-judge → per-dialogue metrics
+    │   ├── aggregate_phase2.py      # [P2] baseline pivot tables (MAIN / TIER / CUE)
+    │   └── aggregate_phase3.py      # [P3] pivots + Phase 2→Phase 3 comparison
     ├── scripts/
-    │   ├── run_phase2_grid.py       # 18-cell grid driver (--arm main|tier|abl|all)
-    │   └── run_phase2_eval.sh       # run disclosure_eval.py on every cell, then aggregate
-    └── results/                     # per-cell dialogue.jsonl + judge JSON + summary tables
+    │   ├── run_phase2_grid.py / run_phase2_eval.sh  # [P2 baseline] 18-cell driver + eval
+    │   └── run_phase3_grid.py / run_phase3_eval.sh  # [P3] same grid, controlled prompt
+    └── results/                     # per-cell dialogue.jsonl + judge JSON + summaries
+        ├── *phase2_* , phase2_summary.*            # [P2 baseline] committed artefacts
+        └── *phase3_* , phase3_summary.* , phase2_vs_phase3*  # [P3] committed artefacts
 ```
 
-The original PatientSim patient prompt (`src/prompts/simulation/initial_system_patient_w_persona*.txt`) is **unchanged** — Phase 2 measures the unmodified PatientSim agent.
+`[shared]` files are used by both phases unchanged; `[P2]` is the baseline; `[P3]` is the controlled-disclosure fix. The original PatientSim patient prompt is left untouched so Phase 2 still measures the unmodified agent.
 
-## Installation
+## Installation (shared — both phases)
 
 **Requirements**: Python ≥ 3.10 (3.11 recommended), Linux/macOS, **no GPU required** (CPU-only — all LLM work is over the Gemini API).
 
@@ -85,7 +99,13 @@ cp .env.example .env
 export $(grep -v '^#' .env | xargs)
 ```
 
-## Usage
+---
+
+# Phase 2 (baseline) — Disclosure-Quality Measurement
+
+*The sections below document the **Phase 2 baseline**: the disclosure-quality evaluator and the 18-cell measurement of the **unmodified** PatientSim agent. They are kept verbatim as the reference Phase 3 is compared against — every script/file named `phase2` here has a `phase3` mirror (see [Phase 3 code layout](#phase-3-code-layout) above). Installation above applies to both phases.*
+
+## Usage (Phase 2 baseline)
 
 ```bash
 # 1. Single smoke test (passive-dots cue, default-setting pneumonia patient)
