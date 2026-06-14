@@ -1,6 +1,6 @@
 # PatientSim Phase 3 — Controlling Spontaneous Disclosure (Team 12)
 
-ML4H 2026 Phase 3 submission, continuing our Phase 2 disclosure-quality metrics. **GitHub**: <https://github.com/dhyun22/PatientSim-Phase2>
+ML4H 2026 Phase 3 submission, continuing our Phase 2 disclosure-quality metrics. **GitHub**: <https://github.com/dhyun22/PatientSim-Phase3>
 
 **Phase 3 (latest):** a bucket-gated *controlled-disclosure* patient agent that closes the spontaneous-disclosure leak measured in Phase 2 — see [Phase 3 — Controlled-Disclosure Patient Agent](#phase-3--controlled-disclosure-patient-agent) below. **Phase 2 (baseline):** the disclosure-quality evaluator and the 18-cell measurement of the unmodified PatientSim agent, documented in the rest of this README and left untouched for comparison.
 
@@ -89,8 +89,8 @@ Run `python src/scripts/run_phase3_grid.py` with no flag for a dry single smoke 
 **Requirements**: Python ≥ 3.10 (3.11 recommended), Linux/macOS, **no GPU required** (CPU-only — all LLM work is over the Gemini API).
 
 ```bash
-git clone https://github.com/dhyun22/PatientSim-Phase2.git
-cd PatientSim-Phase2
+git clone https://github.com/dhyun22/PatientSim-Phase3.git
+cd PatientSim-Phase3
 conda create -n patientsim python=3.11 -y
 conda activate patientsim
 pip install -r requirements.txt
